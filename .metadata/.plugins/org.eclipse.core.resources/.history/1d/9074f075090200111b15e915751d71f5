@@ -1,0 +1,122 @@
+
+public class RunMe {
+
+    public static void main(String[] args) {
+
+        System.out.println("Helo, Great start. ");
+
+        //testConstructorAndGetters();
+        //testSetPrice();
+        //testToString();
+        //testToFileString();
+        //testPolymorphism();
+    }
+
+    
+     * Tests constructor and getter methods
+     
+    public static void testConstructorAndGetters() {
+        System.out.println("=== testConstructorAndGetters ===");
+
+        Car car = new Car("Toyota", "Camry", 2021, 23999.99);
+
+        boolean pass =
+                car.getMake().equals("Toyota") &&
+                car.getModel().equals("Camry") &&
+                car.getYear() == 2021 &&
+                car.getPrice() == 23999.99;
+
+        if (pass) {
+            System.out.println("PASS: Constructor and getters work correctly.");
+        } else {
+            System.out.println("FAIL: Constructor or getters are incorrect.");
+        }
+
+        System.out.println();
+    }
+     
+
+    
+    
+     * Tests the setPrice() method
+     
+    public static void testSetPrice() {
+        System.out.println("=== testSetPrice ===");
+
+        Car car = new Car("Honda", "Civic", 2020, 21999.99);
+        car.setPrice(19999.99);
+
+        if (car.getPrice() == 19999.99) {
+            System.out.println("PASS: setPrice() updated the price correctly.");
+        } else {
+            System.out.println("FAIL: setPrice() did not update the price correctly.");
+        }
+
+        System.out.println();
+    }
+   
+    /**
+     * Tests the toString() method
+     
+    public static void testToString() {
+        System.out.println("=== testToString ===");
+
+        Car car = new Car("Ford", "Mustang", 2022, 35999.50);
+        String expected = "2022 Ford Mustang - $35999.50";
+
+        if (car.toString().equals(expected)) {
+            System.out.println("PASS: toString() output is correct.");
+        } else {
+            System.out.println("FAIL: toString() output is incorrect.");
+            System.out.println("Expected: " + expected);
+            System.out.println("Actual:   " + car.toString());
+        }
+
+        System.out.println();
+    }
+    */
+
+    /**
+     * Tests the toFileString() method
+     
+    public static void testToFileString() {
+        System.out.println("=== testToFileString ===");
+
+        Car car = new Car("Chevrolet", "Malibu", 2019, 18999.00);
+        String expected = "Chevrolet,Malibu,2019,18999.0";
+
+        if (car.toFileString().equals(expected)) {
+            System.out.println("PASS: toFileString() output is correct.");
+        } else {
+            System.out.println("FAIL: toFileString() output is incorrect.");
+            System.out.println("Expected: " + expected);
+            System.out.println("Actual:   " + car.toFileString());
+        }
+
+        System.out.println();
+    }
+    */
+
+    /**
+     * Tests polymorphism using Vehicle and VehicleInterface references
+     
+    public static void testPolymorphism() {
+        System.out.println("=== testPolymorphism ===");
+
+        Vehicle vehicle = new Car("Nissan", "Altima", 2023, 27999.99);
+        VehicleInterface vInterface = new Car("Mazda", "CX-5", 2022, 30999.99);
+
+        boolean pass =
+                vehicle.getMake().equals("Nissan") &&
+                vInterface.getModel().equals("CX-5");
+
+        if (pass) {
+            System.out.println("PASS: Polymorphism works correctly.");
+        } else {
+            System.out.println("FAIL: Polymorphism is not working correctly.");
+        }
+
+        System.out.println();
+    }
+    */
+}
