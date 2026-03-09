@@ -1,2 +1,3 @@
-2026/02/04-12:56:13.893 4028 Creating DB C:\Users\trevi\CS2050\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db since it was missing.
-2026/02/04-12:56:13.958 4028 Reusing MANIFEST C:\Users\trevi\CS2050\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db/MANIFEST-000001
+2026/03/08-22:43:32.897 84d0 Reusing MANIFEST C:\Users\trevi\CS2050\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db/MANIFEST-000001
+2026/03/08-22:43:32.898 84d0 Recovering log #3
+2026/03/08-22:43:32.899 84d0 Reusing old log C:\Users\trevi\CS2050\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db/000003.log 

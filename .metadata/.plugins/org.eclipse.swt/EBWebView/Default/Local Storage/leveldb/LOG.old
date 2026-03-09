@@ -1,2 +1,3 @@
-2026/02/04-12:56:14.204 4f44 Creating DB C:\Users\trevi\CS2050\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
-2026/02/04-12:56:14.260 4f44 Reusing MANIFEST C:\Users\trevi\CS2050\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/03/08-22:43:33.005 9764 Reusing MANIFEST C:\Users\trevi\CS2050\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/03/08-22:43:33.021 9764 Recovering log #3
+2026/03/08-22:43:33.028 9764 Reusing old log C:\Users\trevi\CS2050\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 

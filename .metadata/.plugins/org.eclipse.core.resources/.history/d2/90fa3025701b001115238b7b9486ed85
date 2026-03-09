@@ -1,0 +1,18 @@
+
+public class Fist_Last_Assignment02 {
+
+	public static void main(String[] args) {
+
+	}
+
+    // Generic method to print any linked list
+    public static <T> void printList(Node<T> head) {
+
+        Node<T> current = head;
+
+        while (current != null) {
+            System.out.println(current.getData().toString());
+            current = current.getNextNode();
+        }
+    }
+}

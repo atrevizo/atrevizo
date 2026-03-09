@@ -1,0 +1,51 @@
+
+public class ArieanaTrevizoAssignment02 {
+
+	public static void main(String[] args) {
+
+	}
+
+	Sedan Sedan1 = new Sedan("Toyota","Camry", "White","SED001", 2021, 25000);
+	Sedan Sedan2 = new Sedan("Honda","Accord", "Black","SED002", 2022, 27000);
+	Sedan Sedan3 = new Sedan("Nissan","Altima", "Blue","SED003", 2020, 23000);
+	
+	
+	Node<Sedan> sedanNode3 = new Node<>(sedan3);
+    Node<Sedan> sedanNode2 = new Node<>(sedan2, sedanNode3);
+    Node<Sedan> sedanNode1 = new Node<>(sedan1, sedanNode2);
+    
+    SUV suv1 = new SUV("Toyota", "Highlander", "Blue",  "SUV001", 2022, 35000);
+    SUV suv2 = new SUV("Ford",   "Explorer",   "Black", "SUV002", 2021, 32000);
+    SUV suv3 = new SUV("Honda",  "CRV",        "White", "SUV003", 2023, 33000);
+
+    Node<SUV> suvNode3 = new Node<>(suv3);
+    Node<SUV> suvNode2 = new Node<>(suv2, suvNode3);
+    Node<SUV> suvNode1 = new Node<>(suv1, suvNode2);
+    
+    MiniVan van1 = new MiniVan("Honda",    "Odyssey",  "Silver", "VAN001", 2020, 28000);
+    MiniVan van2 = new MiniVan("Toyota",   "Sienna",   "Red",    "VAN002", 2022, 30000);
+    MiniVan van3 = new MiniVan("Chrysler", "Pacifica", "Gray",   "VAN003", 2021, 29000);
+
+    Node<MiniVan> vanNode3 = new Node<>(van3);
+    Node<MiniVan> vanNode2 = new Node<>(van2, vanNode3);
+    Node<MiniVan> vanNode1 = new Node<>(van1, vanNode2);
+
+    Vehicle v1 = new Sedan("Honda",   "Accord",    "Black", "SED002", 2022, 27000);
+    Vehicle v2 = new SUV("Toyota",    "Highlander","Blue",  "SUV001", 2022, 35000);
+    Vehicle v3 = new MiniVan("Toyota","Sienna",    "Red",   "VAN002", 2022, 30000);
+
+    Node<Vehicle> vNode3 = new Node<>(v3);
+    Node<Vehicle> vNode2 = new Node<>(v2, vNode3);
+    Node<Vehicle> vNode1 = new Node<>(v1, vNode2);
+}
+    // Generic method to print any linked list
+    public static <T> void printList(Node<T> head) {
+
+        Node<T> current = head;
+
+        while (current != null) {
+            System.out.println(current.getData().toString());
+            current = current.getNextNode();
+        }
+    }
+}
