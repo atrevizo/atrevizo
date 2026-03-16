@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\trevi\CS2050\assignment-03-atrevizo"/>
 			<item value="C:\Users\trevi\CS2050\assignment-02-atrevizo"/>
 			<item value="C:\Users\trevi\CS2050\in-class-exercise-02-atrevizo"/>
 			<item value="C:\Users\trevi\CS2050\inclassexercise01-atrevizo"/>
